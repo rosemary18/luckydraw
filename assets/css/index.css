@@ -47,7 +47,7 @@ html, body {
 .button-neon:hover {
     color: #255784;
     background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 30px #2196f3;
     transition-delay: 1s;
 }
 
@@ -58,6 +58,7 @@ html, body {
 
 .button-neon span:nth-child(1) {
     top: 0;
+    animation: blinkRight 2.4s ease-out infinite forwards ;
     left: -100%;
     width: 100%;
     height: 2px;
@@ -71,6 +72,7 @@ html, body {
 
 .button-neon span:nth-child(3) {
     bottom: 0;
+    animation: blinkLeft 2.4s ease-out infinite forwards ;
     right: -100%;
     width: 100%;
     height: 2px;
@@ -89,6 +91,7 @@ html, body {
     width: 2px;
     height: 100%;
     background: linear-gradient(180deg, transparent, #2196f3);
+    animation: blinkDown 2.4s ease-out infinite forwards ;
 }
 
 .button-neon:hover span:nth-child(2) {
@@ -103,6 +106,7 @@ html, body {
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg, transparent, #2196f3);
+    animation: blinkUp 2.4s ease-out infinite forwards ;
 }
 
 .button-neon:hover span:nth-child(4) {
@@ -273,7 +277,6 @@ html, body {
 .content-detail-section {
     display: flex;
     flex-direction: column;
-    max-height: 100%;
     background-color: rgba(255,255,255,.12);
     margin: 4px;
     width: 100%;
@@ -305,14 +308,15 @@ html, body {
 }
 
 .draw-section-content {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    height: 100%;
     margin: 0px;
     padding: 0px;
-    height: 100%;
     background-color: rgba(255,255,255,.05);
     border-radius: 4px;
+    box-sizing: border-box;
     overflow: auto;
 }
 
@@ -322,7 +326,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 12px;
+    padding: 12px 16px;
     border: 1px solid rgba(255,255,255,.12);
     color: #ffffff88;
     transition: all .4s ease;
@@ -355,6 +359,10 @@ html, body {
     transition: all .5s ease;
 }
 
+.list-item-prize p {
+    margin: 0px;
+}
+
 .list-item-participant {
     color: #ffffff88;
     margin: 4px 12px;
@@ -370,13 +378,52 @@ html, body {
 }
 
 .prize-detail-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    max-height: 60%;
+    margin: 0px;
+    padding: 0px 6px;
+    padding-top: .8em;
+}
+
+.prize-draw {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-height: 100%;
+    margin: 0px;
+    overflow: auto;
+}
+
+.prize-detail {
     display: flex;
     height: 100%;
+    max-height: 100%;
+    margin: 0px;
+}
+
+.prize-detail .side {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid rgba(255,255,255,.12);
+    margin: 0px 6px;
+    border-radius: 4px;
+    padding: 1rem;
+    overflow: auto;
+    box-sizing: border-box;
 }
 
 .play-area {
     display: flex;
-    min-height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 40%;
+    max-height: 40%;
     background-color: rgba(255,255,255,.1);
     margin: 12px;
     border-radius: 4px;
@@ -397,4 +444,90 @@ html, body {
     color: white;
     font-size: .8rem;
     font-weight: 400;
+}
+
+.title-side {
+    font-size: .9em;
+    color: rgba(255,255,255,.5);
+    margin: 0px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.list-winners {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+    padding: 8px 0px;
+    margin: 0px;
+    overflow: auto;
+}
+
+.list-winners p {
+    display: flex;
+    padding: 0px;
+    margin: 8px 18px;
+    color: rgba(255,255,255,.5);
+    list-style: none;
+}
+
+.text-detail {
+    font-size: .9em;
+    color: rgba(255,255,255,.5);
+    margin: 0px;
+    margin-bottom: 4px;
+    letter-spacing: 2px;
+}
+
+#draw-winner {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+@keyframes blinkRight {
+    0% {
+        left: -100%;
+    }
+    25% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes blinkLeft {
+    50% {
+        right: -100%;
+    }
+    75% {
+        right: 100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes blinkUp {
+    75% {
+        bottom: -100%;
+    }
+    100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes blinkDown {
+    25% {
+        top: -100%;
+    }
+    50% {
+        top: 100%;
+    }
+    100% {
+        top: 100%;
+    }
 }
