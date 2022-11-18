@@ -419,6 +419,7 @@ html, body {
 
 .play-area {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex: 1;
@@ -486,6 +487,22 @@ html, body {
     font-weight: bold;
     font-size: 2em;
 }
+
+.draw-options {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.input-image {
+    margin: 8px 0px;
+    width: 50%;
+    transition: all .4s ease;
+}
+
+.input-image:hover {
+    opacity: .5;
+}
+
 
 @keyframes blinkRight {
     0% {

@@ -5,10 +5,47 @@ html, body {
 }
 
 #root {
-    height: 100%;
-    background-color: #031321;
+    background-image: url('../images/bg-play.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    color: white;
+}
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-prize {
+    margin: 0px auto;
+    margin-bottom: 5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #133C68;
+}
+
+.draw-text {
+    width: 34rem;
+    max-width: 34rem;
+    padding: 10px;
+    margin: 0px;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow:  5px 5px 10px #0000000d;
+    height: 2.5rem;
+}
+
+.image-prize {
+    position: absolute;
+    left: -310px;
+    height: 340px;
 }
