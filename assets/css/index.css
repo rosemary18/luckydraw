@@ -503,6 +503,37 @@ html, body {
     opacity: .5;
 }
 
+.button-fall, .button-redraw {
+    font-family: consolas;
+    padding: 8px 18px;
+    font-size: 1em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    outline: none;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    opacity: .7;
+    margin: 4px;
+    border-radius: 4px;
+}
+
+.button-fall {
+    color: rgb(230, 109, 109);
+}
+
+.button-redraw {
+    color: rgb(0, 227, 72);
+}
+
+.button-fall:hover {
+    opacity: 1;
+    background-color: rgb(249, 199, 199);
+}
+
+.button-redraw:hover {
+    background-color: rgb(175, 255, 200);
+}
 
 @keyframes blinkRight {
     0% {

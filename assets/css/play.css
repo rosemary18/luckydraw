@@ -25,18 +25,18 @@ html, body {
 .title-prize {
     margin: 0px auto;
     margin-bottom: 5rem;
-    font-size: 2rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     color: #133C68;
 }
 
 .draw-text {
-    width: 34rem;
+    min-width: 34rem;
     max-width: 34rem;
-    padding: 10px;
+    padding: .8em;
     margin: 0px;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     background-color: white;
     border-radius: 4px;
@@ -46,6 +46,6 @@ html, body {
 
 .image-prize {
     position: absolute;
-    left: -310px;
-    height: 340px;
+    left: -30em;
+    height: 30em;
 }
