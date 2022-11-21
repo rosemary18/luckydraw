@@ -33,7 +33,7 @@ html, body {
 .draw-text {
     min-width: 34rem;
     max-width: 34rem;
-    padding: .8em;
+    padding: .67em .8em;
     margin: 0px;
     margin-bottom: 1rem;
     font-size: 2.5rem;
@@ -46,6 +46,6 @@ html, body {
 
 .image-prize {
     position: absolute;
-    left: -30em;
-    height: 30em;
+    left: -26em;
+    width: 30em;
 }
