@@ -5,13 +5,22 @@ html, body {
 }
 
 #root {
-    background-image: url('../images/bg-play.jpeg');
+    padding-top: 13.5em;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     height: 100%;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+}
+
+.bg1 {
+    background-image: url('../images/bg-lucky.jpeg');
+}
+
+.bg2 {
+    background-image: url('../images/bg-grand-lucky.jpeg');
 }
 
 .content {
@@ -24,7 +33,7 @@ html, body {
 
 .title-prize {
     margin: 0px auto;
-    margin-bottom: 5rem;
+    margin-bottom: 2.5rem;
     font-size: 2.8rem;
     text-transform: uppercase;
     color: #133C68;
@@ -40,13 +49,14 @@ html, body {
     text-align: center;
     background-color: white;
     border-radius: 4px;
-    box-shadow:  5px 5px 10px #0000000d;
+    box-shadow:  5px 5px 20px #00000059;
     height: 2.5rem;
 }
 
 .image-prize {
     position: absolute;
     left: -25em;
+    bottom: -3.5em;
     width: 26.6em;
     height: 26.6em;
     object-fit: contain;
