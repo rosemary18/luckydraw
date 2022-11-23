@@ -56,7 +56,6 @@ html, body {
 .image-prize {
     position: absolute;
     left: -25em;
-    bottom: -3.5em;
     width: 26.6em;
     height: 26.6em;
     object-fit: contain;
