@@ -50,7 +50,26 @@ html, body {
     background-color: white;
     border-radius: 4px;
     box-shadow:  5px 5px 20px #00000059;
-    height: 2.5rem;
+    min-height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.draw-text-md {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20rem;
+    padding: .5em .8em;
+    margin: 0px .3em;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow:  5px 5px 20px #00000059;
+    min-height: 2.5rem;
 }
 
 .image-prize {
@@ -59,4 +78,32 @@ html, body {
     width: 26.6em;
     height: 26.6em;
     object-fit: contain;
+}
+
+.list-winners {
+    min-width: 34rem;
+    max-height: 18em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: marquee 10s linear infinite;
+}
+
+.list-winners p {
+    margin: 4px auto;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color: #133C68;
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 100%); }
+    100% { transform: translate(0, -100%); }
 }

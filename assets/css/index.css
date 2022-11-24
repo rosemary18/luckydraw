@@ -485,7 +485,7 @@ html, body {
 #draw-winner {
     color: white;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .draw-options {
