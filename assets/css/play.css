@@ -6,7 +6,7 @@ html, body {
 
 #root {
     padding-top: 13.5em;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     height: 100%;
@@ -16,11 +16,13 @@ html, body {
 }
 
 .bg1 {
-    background-image: url('../images/bg-lucky.jpg');
+    /* background-image: url('../images/bg-lucky.jpg'); */
+    background: #2381d3;
 }
 
 .bg2 {
-    background-image: url('../images/bg-grand-lucky.jpg');
+    /* background-image: url('../images/bg-grand-lucky.jpg'); */
+    background: #2381d3;
 }
 
 .content {

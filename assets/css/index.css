@@ -549,6 +549,17 @@ html, body {
     background-color: rgb(175, 255, 200);
 }
 
+.select {
+    padding: 4px;
+    margin: 3px;
+    border: none;
+    min-width: 200px;
+}
+
+.select:active {
+    border: 0px;
+}
+
 @keyframes blinkRight {
     0% {
         left: -100%;
