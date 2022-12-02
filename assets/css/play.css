@@ -16,13 +16,11 @@ html, body {
 }
 
 .bg1 {
-    /* background-image: url('../images/bg-lucky.jpg'); */
-    background: #2381d3;
+    background-image: url('../images/bg-lucky.png');
 }
 
 .bg2 {
-    /* background-image: url('../images/bg-grand-lucky.jpg'); */
-    background: #2381d3;
+    background-image: url('../images/bg-grand-lucky.png');
 }
 
 .content {
