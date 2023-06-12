@@ -13,14 +13,21 @@ html, body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .bg1 {
-    background-image: url('../images/bg-lucky.jpeg');
+    background: url('../images/bg-lucky.jpeg') no-repeat center center; 
+    
 }
 
 .bg2 {
-    background-image: url('../images/bg-grand-lucky.jpeg');
+    background: url('../images/bg-grand-lucky.jpeg') no-repeat center center; 
 }
 
 .content {
@@ -32,7 +39,7 @@ html, body {
 }
 
 .title-prize {
-    margin: 0px auto;
+    margin: 0em auto;
     margin-bottom: 2.5rem;
     font-size: 2.8rem;
     text-transform: uppercase;
@@ -82,7 +89,7 @@ html, body {
 
 .list-winners {
     min-width: 34rem;
-    max-height: 18em;
+    height: 10em;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -98,7 +105,7 @@ html, body {
 
 .list-winners p {
     margin: 4px auto;
-    font-size: 1.8em;
+    font-size: 3em;
     text-transform: uppercase;
     color: #133C68;
 }
