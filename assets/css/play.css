@@ -21,14 +21,14 @@ html, body {
     background-size: cover;
 }
 
-.bg1 {
+/* .bg1 {
     background: url('../images/bg-lucky.jpeg') no-repeat center center; 
     
 }
 
 .bg2 {
     background: url('../images/bg-grand-lucky.jpeg') no-repeat center center; 
-}
+} */
 
 .content {
     position: relative;
