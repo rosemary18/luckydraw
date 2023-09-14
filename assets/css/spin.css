@@ -1,0 +1,29 @@
+html, body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+    background-color: #FFFFFF;
+    background-size: cover;
+    background-position: center;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+}
+.marquee {
+    animation: marquee 10s linear infinite;
+}
+
+.mask {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 15%);
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 100%); }
+    100% { transform: translate(0, -100%); }
+}
